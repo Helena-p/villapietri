@@ -1,3 +1,4 @@
+/* ----- Browser reset ----- */
 *,
 *::after,
 *::before {
@@ -14,9 +15,18 @@ html {
   box-sizing: border-box;
 }
 
+/* ----- Declared variables ----- */
+:root {
+  --text-white: #f5f9ff;
+  --icon-yellow: #ffb62e;
+  --danger-red: #db3700;
+  --submit-green: #459414;
+}
+
+/* ----- Background image with overlay ----- */
 .hero-img {
+  display: flex;
   height: 100vh;
-  width: 100%;
   position: relative;
   background-image: linear-gradient(
       70deg,
@@ -25,5 +35,49 @@ html {
     ),
     url(../images/villa-pietra2.png);
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
+
+  justify-content: center;
+  align-items: center;
 }
+
+.outer-box {
+  width: 90vw;
+  height: 90vh;
+}
+
+/* ----- Header text content ----- */
+.header__content {
+  position: relative;
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: var(--text-white);
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.header__secondary {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-family: "Rancho", sans-serif;
+  font-size: 2.6rem;
+  letter-spacing: 0.2rem;
+}
+
+.header__text {
+  font-size: 2.6rem;
+  word-spacing: 0.3rem;
+  font-weight: 600;
+}
+
+.header__primary {
+  font-size: 7rem;
+  font-weight: 600;
+}
+/* ----- Form ----- */
