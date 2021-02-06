@@ -33,10 +33,91 @@
         </header>
 
         <!-- Form -->
-        <main>
-          <section class="form__container"></section>
+        <main class="main">
+          <form class="form__container">
+            <label for="fname" class="container__label">First name</label>
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              class="container__input"
+            />
+            <label for="lname" class="container__label">Last name</label>
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              class="container__input"
+            />
+            <label for="email" class="container__label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="container__input"
+            />
+            <label for="room" class="container__label">Room</label>
+            <select id="room" name="room" class="container__input">
+              <option value="Single">Single</option>
+              <option value="Double">Double</option>
+              <option value="Suite">Suite</option>
+            </select>
+            <!-- Adults -->
+            <label for="adults" class="container__label">Adults</label>
+            <select id="adults" name="adults" class="container__input">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+            <!-- Children -->
+            <label for="children" class="container__label">Children</label>
+            <select id="children" name="children" class="container__input">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+            <!-- Date picker -->
+            <div class="container">
+              <div class="row">
+                Date formats: yyyy-mm-dd, yyyymmdd, dd-mm-yyyy, dd/mm/yyyy,
+                ddmmyyyyy
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="form-group">
+                    <div class="input-group date" id="datetimepicker1">
+                      <input type="text" class="form-control" />
+                      <span class="input-group-addon"
+                        ><span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Teaxt area-->
+            <label for="textarea" class="container__label"
+              >Special Request</label
+            >
+            <textarea
+              name="message"
+              rows="10"
+              cols="30"
+              class="container__input"
+            ></textarea>
+          </form>
         </main>
       </div>
     </div>
+    <script src="script/main.js"></script>
   </body>
 </html>

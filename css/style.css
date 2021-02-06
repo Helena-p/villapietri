@@ -13,6 +13,8 @@ html {
 
 .body {
   box-sizing: border-box;
+  font-size: 2.6rem;
+  font-family: "Manrepo", sans-serif;
 }
 
 /* ----- Declared variables ----- */
@@ -44,14 +46,16 @@ html {
 }
 
 .outer-box {
+  display: flex;
   width: 90vw;
   height: 90vh;
+  align-items: space-between;
 }
 
 /* ----- Header text content ----- */
 .header__content {
   position: relative;
-  width: 50%;
+  width: 100%;
   height: 40vh;
   display: flex;
   font-family: "Manrope", sans-serif;
@@ -81,3 +85,24 @@ html {
   font-weight: 600;
 }
 /* ----- Form ----- */
+.main {
+  width: 50%;
+  display: flex;
+}
+
+.form__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__label {
+  color: var(--text-white);
+  font-size: 2rem;
+}
+
+.container__input {
+  width: 46.9rem;
+  height: 3.5rem;
+}
