@@ -111,7 +111,8 @@ html {
   width: 90%;
 }
 
-.form__users-box {
+.form__users-box,
+.form__check-in {
   display: flex;
   flex-direction: column;
   width: 40rem;
@@ -189,7 +190,7 @@ html {
 .icon-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* .section__box-group:not(i) {

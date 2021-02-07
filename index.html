@@ -100,29 +100,66 @@
               <div class="form__users-box">
                 <!-- Adults dropdown menu -->
                 <div class="form__section">
-                    <label for="adults" class="form__container-label">Adults</label>
-                    <div class="spacer"></div>
-                    <label for="children" class="form__container-label">Children</label>
+                  <label for="adults" class="form__container-label"
+                    >Adults</label
+                  >
+                  <div class="spacer"></div>
+                  <label for="children" class="form__container-label"
+                    >Children</label
+                  >
                 </div>
+                <div class="form__section-input">
+                  <select
+                    id="adults"
+                    name="adults"
+                    class="form__section-child"
+                    required
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <!-- Children dropdown menu -->
+                  <select
+                    id="children"
+                    name="children"
+                    class="form__section-child"
+                    required
+                  >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__check-in">
+                  <!-- Datepicker -->
+                  <div class="form__section">
+                    <label for="arrival" class="form__container-label"
+                      >Arrival</label
+                    >
+                    <div class="spacer"></div>
+                    <label for="departure" class="form__container-label"
+                      >Departure</label
+                    >
+                  </div>
                   <div class="form__section-input">
-                    <select id="adults" name="adults" class="form__section-child " required>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
+                    <!-- Arrival -->
+                    <select id="arrival" name="arrival" class="form__section-child" required>
+                      <option value="">Not available</option>
                     </select>
-                    <!-- Children dropdown menu -->
-                    <select id="children" name="children" class="form__section-child" required>
-                      <option value="0">0</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
+                    <!-- Departure -->
+                    <select id="departure" name="departure" class="form__section-child" required>
+                      <option value="">Not available</option>
                     </select>
                   </div>
-                  
+
               </div>
-  
+                </div>
               </div>
             </div>
           </form>
