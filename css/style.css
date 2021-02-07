@@ -87,10 +87,10 @@ html {
 
 /* ----- Form ----- */
 .main {
-  width: 50%;
+  width: 48%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -211,4 +211,5 @@ html {
 
 .calendar {
   margin-top: 0.8rem;
+  margin-right: 1.2rem;
 }
