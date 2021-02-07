@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Rancho&display=swap"
       rel="stylesheet"
     />
+    <!-- Fontawesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -33,38 +42,40 @@
         </header>
 
         <!-- Form -->
+        <!-- Personal information input fields -->
         <main class="main">
           <form class="form__container">
-            <label for="fname" class="container__label">First name</label>
+            <label for="fname" class="form__container-label">First name</label>
             <input
               type="text"
               name="fname"
               id="fname"
-              class="container__input"
+              class="form__container-input"
             />
-            <label for="lname" class="container__label">Last name</label>
+            <label for="lname" class="form__container-label">Last name</label>
             <input
               type="text"
               name="lname"
               id="lname"
-              class="container__input"
+              class="form__container-input"
             />
-            <label for="email" class="container__label">Email</label>
+            <label for="email" class="form__container-label">Email</label>
             <input
               type="email"
               name="email"
               id="email"
-              class="container__input"
+              class="form__container-input"
             />
-            <label for="room" class="container__label">Room</label>
-            <select id="room" name="room" class="container__input">
+            <!-- Room selection field -->
+            <label for="room" class="form__container-label">Room</label>
+            <select id="room" name="room" class="form__container-input">
               <option value="Single">Single</option>
               <option value="Double">Double</option>
               <option value="Suite">Suite</option>
             </select>
-            <!-- Adults -->
-            <label for="adults" class="container__label">Adults</label>
-            <select id="adults" name="adults" class="container__input">
+            <!-- Adults dropdown menu -->
+            <label for="adults" class="form__container-label">Adults</label>
+            <select id="adults" name="adults" class="form__container-input">
               <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -73,9 +84,9 @@
               <option value="5">5</option>
               <option value="6">6</option>
             </select>
-            <!-- Children -->
-            <label for="children" class="container__label">Children</label>
-            <select id="children" name="children" class="container__input">
+            <!-- Children dropdown menu -->
+            <label for="children" class="form__container-label">Children</label>
+            <select id="children" name="children" class="form__container-input">
               <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -84,28 +95,38 @@
               <option value="5">5</option>
               <option value="6">6</option>
             </select>
-            <!-- Date picker -->
+
+            <!-- Arrival and departure datepicker -->
+            <!-- datepicker source: https://github.com/uxsolutions/bootstrap-datepicker -->
+            <!-- tutorial: https://formden.com/blog/date-picker -->
             <div class="container">
-              <div class="row">
-                Date formats: yyyy-mm-dd, yyyymmdd, dd-mm-yyyy, dd/mm/yyyy,
-                ddmmyyyyy
-              </div>
               <br />
               <div class="row">
                 <div class="col-sm-3">
                   <div class="form-group">
-                    <div class="input-group date" id="datetimepicker1">
-                      <input type="text" class="form-control" />
-                      <span class="input-group-addon"
-                        ><span class="glyphicon glyphicon-calendar"></span>
-                      </span>
+                    <div id="filterDate2">
+                      <!-- Datepicker as text field -->
+                      <div
+                        class="input-group date"
+                        data-date-format="dd.mm.yyyy"
+                      >
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="dd.mm.yyyy"
+                        />
+                        <div class="input-group-addon">
+                          <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Teaxt area-->
-            <label for="textarea" class="container__label"
+
+            <!-- Teaxt area -->
+            <label for="textarea" class="form__container-label"
               >Special Request</label
             >
             <textarea
@@ -118,6 +139,21 @@
         </main>
       </div>
     </div>
+    <!-- Bootstrap Script -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
     <script src="script/main.js"></script>
   </body>
 </html>

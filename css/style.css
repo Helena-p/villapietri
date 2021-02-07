@@ -1,4 +1,4 @@
-/* ----- Browser reset ----- */
+/* ----- Browser window and CSS reset ----- */
 *,
 *::after,
 *::before {
@@ -84,6 +84,7 @@ html {
   font-size: 7rem;
   font-weight: 600;
 }
+
 /* ----- Form ----- */
 .main {
   width: 50%;
@@ -97,12 +98,12 @@ html {
   flex-direction: column;
 }
 
-.container__label {
+.form__container-label {
   color: var(--text-white);
   font-size: 2rem;
 }
 
-.container__input {
+.form__container-input {
   width: 46.9rem;
   height: 3.5rem;
 }
