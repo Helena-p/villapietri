@@ -40,16 +40,17 @@
           <form action="" method="POST" class="form__container">
             <!-- Icon -->
             <div class="icon-box">
-              <i class="fas fa-user-edit form__icon"></i>
-              <i class="fas fa-user-edit form__icon"></i>
-              <i class="fas fa-envelope form__icon"></i>
-              <i class="fas fa-bed form__icon"></i>
-              <i class="fas fa-calendar-alt form__icon" id="calendar-icon"></i>
-              <i class="fas fa-pencil-alt form__icon"></i>
+              <i class="fas fa-user-edit form__icon user-1"></i>
+              <i class="fas fa-user-edit form__icon user-2"></i>
+              <i class="fas fa-envelope form__icon envelope"></i>
+              <i class="fas fa-bed form__icon bed"></i>
+              <i class="fas fa-users form__icon users"></i>
+              <i class="fas fa-calendar-alt form__icon calendar"></i>
+              <i class="fas fa-pencil-alt form__icon pencil"></i>
             </div>
             <!-- Personal information input fields -->
-            <div class="box form__input-box">
-              <div class="form__fname-box">
+            <div class="form__input-box">
+              <div class="box">
                 <label for="fname" class="form__container-label"
                   >First name</label
                 >
@@ -61,7 +62,7 @@
                   required
                 />
               </div>
-              <div class="box form__lname-box">
+              <div class="box">
                 <label for="lname" class="form__container-label"
                   >Last name</label
                 >
@@ -73,7 +74,7 @@
                   required
                 />
               </div>
-              <div class="box form__email-box">
+              <div class="box">
                 <label for="email" class="form__container-label">Email</label>
                 <input
                   type="email"
@@ -84,7 +85,7 @@
                 />
               </div>
               <!-- Room selection field -->
-              <div class="box form__room-box">
+              <div class="box">
                 <label for="room" class="form__container-label">Room</label>
                 <select
                   id="room"
@@ -157,8 +158,28 @@
                       <option value="">Not available</option>
                     </select>
                   </div>
-
               </div>
+
+              <div>
+                <!-- Teaxt area -->
+                <label for="textarea" class="form__container-label"
+                >Special Request</label
+                >
+                <textarea
+                  name="message"
+                  rows="6"
+                  cols="10"
+                  class="form__container-input textarea"
+                ></textarea>
+              </div>
+              <!-- Buttons -->
+              <div class="form__btn">
+                <input type="reset" class="btn form-reset"></input>
+                <input type="submit" value="Submit" class="btn form-submit"></input>
+              </div>
+  
+
+
                 </div>
               </div>
             </div>
