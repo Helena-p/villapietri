@@ -44,7 +44,7 @@
         <!-- Form -->
         <!-- Personal information input fields -->
         <main class="main">
-          <form class="form__container">
+          <form action="" method="POST" class="form__container">
             <label for="fname" class="form__container-label">First name</label>
             <input
               type="text"
@@ -69,6 +69,7 @@
             <!-- Room selection field -->
             <label for="room" class="form__container-label">Room</label>
             <select id="room" name="room" class="form__container-input">
+              <option value=""></option>
               <option value="Single">Single</option>
               <option value="Double">Double</option>
               <option value="Suite">Suite</option>
@@ -76,24 +77,21 @@
             <!-- Adults dropdown menu -->
             <label for="adults" class="form__container-label">Adults</label>
             <select id="adults" name="adults" class="form__container-input">
-              <option value="0">0</option>
+              <option value=""></option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
             </select>
             <!-- Children dropdown menu -->
             <label for="children" class="form__container-label">Children</label>
             <select id="children" name="children" class="form__container-input">
+              <option value=""></option>
               <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
             </select>
 
             <!-- Arrival and departure datepicker -->
@@ -131,10 +129,14 @@
             >
             <textarea
               name="message"
-              rows="10"
-              cols="30"
-              class="container__input"
+              rows="6"
+              cols="10"
+              class="form__container-input textarea"
             ></textarea>
+            <div class="form__btn">
+              <input type="reset" class="btn form-reset"></input>
+              <input type="submit" value="Submit" class="btn form-submit"></input>
+            </div>
           </form>
         </main>
       </div>
