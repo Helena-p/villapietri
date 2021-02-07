@@ -131,6 +131,7 @@ html {
   height: 4rem;
   margin-top: 3rem;
   cursor: pointer;
+  border: none;
 }
 
 .btn:hover {
@@ -145,7 +146,6 @@ html {
 
 .form-submit {
   background-color: var(--submit-green);
-  /* margin-right: 2rem; */
 }
 
 /* ----- Form icons ----- */
@@ -160,6 +160,11 @@ html {
 }
 
 #adult {
+  width: 23rem;
+}
+
+#arrival {
+  margin-left: 1rem;
   width: 23rem;
 }
 
@@ -179,4 +184,8 @@ html {
 .form__icon {
   color: var(--icon-yellow);
   margin-right: 1.9rem;
+}
+
+#email {
+  margin-left: 0.8rem;
 }

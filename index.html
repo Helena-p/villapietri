@@ -16,15 +16,8 @@
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
-    <!-- Bootstrap CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Villa Pietri</title>
+    <title>Villa Pietra</title>
   </head>
 
   <body class="body">
@@ -80,7 +73,6 @@
             <div class="icon-box">
             <i class="fas fa-bed form__icon"></i>
             <select id="room" name="room" class="form__container-input" required>
-              <option value=""></option>
               <option value="Single">Single</option>
               <option value="Double">Double</option>
               <option value="Suite">Suite</option>
@@ -94,7 +86,6 @@
             <div class="icon-box section__box-group">
             <i class="fas fa-users form__icon"></i>
             <select id="adults" name="adults" class="form__container-input form__section1" required>
-              <option value=""></option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -102,7 +93,6 @@
             </select>
             <!-- Children dropdown menu -->
             <select id="children" name="children" class="form__container-input form__section2" required>
-              <option value=""></option>
               <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -110,9 +100,22 @@
               <option value="4">4</option>
             </select>
           </div>
-
-            
-
+          <!-- Datepicker -->
+          <div class="select__label">
+            <label for="arrival" class="form__container-label" id="arrival">Arrival</label>
+            <label for="departure" class="form__container-label">Departure</label>
+            </div>
+            <div class="icon-box section__box-group">
+              <i class="fas fa-calendar-alt form__icon"></i>
+            <select id="arrival" name="arrival" class="form__container-input form__section1" required>
+              <option value="">Dates coming soon!</option>
+            </select>
+            <!-- Children dropdown menu -->
+            <select id="departure" name="departure" class="form__container-input form__section2" required>
+              <option value="">Dates coming soon!</option>
+            </select>
+          </div>
+           
             <!-- Teaxt area -->
             <label for="textarea" class="form__container-label"
               >Special Request</label
@@ -134,20 +137,5 @@
         </main>
       </div>
     </div>
-    <!-- Bootstrap Script -->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.3.min.js"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
