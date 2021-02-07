@@ -35,103 +35,95 @@
         </header>
 
         <!-- Form -->
-        <!-- Personal information input fields -->
+
         <main class="main">
           <form action="" method="POST" class="form__container">
-            <label for="fname" class="form__container-label">First name</label>
+            <!-- Icon -->
             <div class="icon-box">
-            <i class="fas fa-user-edit form__icon"></i>
-            <input
-              type="text"
-              name="fname"
-              id="fname"
-              class="form__container-input" required
-            />
-          </div>
-            <label for="lname" class="form__container-label">Last name</label>
-            <div class="icon-box">
-            <i class="fas fa-user-edit form__icon"></i>
-            <input
-              type="text"
-              name="lname"
-              id="lname"
-              class="form__container-input" required
-            />
-          </div>
-            <label for="email" class="form__container-label">Email</label>
-            <div class="icon-box">
-            <i class="fas fa-envelope form__icon"></i>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="form__container-input" required
-            />
-          </div>
-            <!-- Room selection field -->
-            <label for="room" class="form__container-label">Room</label>
-            <div class="icon-box">
-            <i class="fas fa-bed form__icon"></i>
-            <select id="room" name="room" class="form__container-input" required>
-              <option value="Single">Single</option>
-              <option value="Double">Double</option>
-              <option value="Suite">Suite</option>
-            </select>
-          </div>
-            <!-- Adults dropdown menu -->
-            <div class="select__label">
-            <label for="adults" class="form__container-label" id="adult">Adults</label>
-            <label for="children" class="form__container-label">Children</label>
+              <i class="fas fa-user-edit form__icon"></i>
+              <i class="fas fa-user-edit form__icon"></i>
+              <i class="fas fa-envelope form__icon"></i>
+              <i class="fas fa-bed form__icon"></i>
+              <i class="fas fa-calendar-alt form__icon" id="calendar-icon"></i>
+              <i class="fas fa-pencil-alt form__icon"></i>
             </div>
-            <div class="icon-box section__box-group">
-            <i class="fas fa-users form__icon"></i>
-            <select id="adults" name="adults" class="form__container-input form__section1" required>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-            <!-- Children dropdown menu -->
-            <select id="children" name="children" class="form__container-input form__section2" required>
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <!-- Datepicker -->
-          <div class="select__label">
-            <label for="arrival" class="form__container-label" id="arrival">Arrival</label>
-            <label for="departure" class="form__container-label">Departure</label>
-            </div>
-            <div class="icon-box section__box-group">
-              <i class="fas fa-calendar-alt form__icon"></i>
-            <select id="arrival" name="arrival" class="form__container-input form__section1" required>
-              <option value="">Dates coming soon!</option>
-            </select>
-            <!-- Children dropdown menu -->
-            <select id="departure" name="departure" class="form__container-input form__section2" required>
-              <option value="">Dates coming soon!</option>
-            </select>
-          </div>
-           
-            <!-- Teaxt area -->
-            <label for="textarea" class="form__container-label"
-              >Special Request</label
-            >
-            <div class="icon-box">
-            <i class="fas fa-pencil-alt form__icon"></i>
-            <textarea
-              name="message"
-              rows="6"
-              cols="10"
-              class="form__container-input textarea"
-            ></textarea>
-          </div>
-            <div class="form__btn">
-              <input type="reset" class="btn form-reset"></input>
-              <input type="submit" value="Submit" class="btn form-submit"></input>
+            <!-- Personal information input fields -->
+            <div class="box form__input-box">
+              <div class="form__fname-box">
+                <label for="fname" class="form__container-label"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  class="form__container-input"
+                  required
+                />
+              </div>
+              <div class="box form__lname-box">
+                <label for="lname" class="form__container-label"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  class="form__container-input"
+                  required
+                />
+              </div>
+              <div class="box form__email-box">
+                <label for="email" class="form__container-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form__container-input"
+                  required
+                />
+              </div>
+              <!-- Room selection field -->
+              <div class="box form__room-box">
+                <label for="room" class="form__container-label">Room</label>
+                <select
+                  id="room"
+                  name="room"
+                  class="form__container-input"
+                  required
+                >
+                  <option value="Single">Single</option>
+                  <option value="Double">Double</option>
+                  <option value="Suite">Suite</option>
+                </select>
+              </div>
+              <div class="form__users-box">
+                <!-- Adults dropdown menu -->
+                <div class="form__section">
+                    <label for="adults" class="form__container-label">Adults</label>
+                    <div class="spacer"></div>
+                    <label for="children" class="form__container-label">Children</label>
+                </div>
+                  <div class="form__section-input">
+                    <select id="adults" name="adults" class="form__section-child " required>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    <!-- Children dropdown menu -->
+                    <select id="children" name="children" class="form__section-child" required>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                  
+              </div>
+  
+              </div>
             </div>
           </form>
         </main>
